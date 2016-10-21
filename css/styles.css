@@ -18,6 +18,13 @@ label {
   display: none;
 }
 
+#welcome{
+  margin-top: 20%;
+  padding: 200px;
+  background: -webkit-linear-gradient(white, #cacece, white);
+  box-shadow: 10px 10px 20px grey;
+}
+
 
 #ruby, #csharp, #java, #php, #design, #trouble {
   display: none;
