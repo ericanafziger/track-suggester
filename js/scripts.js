@@ -42,10 +42,10 @@ $(document).ready(function(){
   } else if (companyInput === "corp" && interestsInput === "android" && styleInput + environmentInput === 12) {
     $("#java").show();
     $("#formInputSection").hide();
-  } else if (companyInput === "agency" && interestsInput === "websites" && styleInput + environmentInput === 9) {
+  } else if (companyInput === "agency" && interestsInput === "websites" && styleInput + environmentInput === 9 || companyInput === "start-up" && interestsInput === "websites" && styleInput + environmentInput === 9) {
     $("#php").show();
     $("#formInputSection").hide();
-  } else if (companyInput === "design" && interestsInput === "operate" && styleInput === 3) {
+  } else if (interestsInput === "websites" && styleInput === 3 || interestsInput === "operate" && styleInput === 3) {
     $("#design").show();
     $("#formInputSection").hide();
   } else {
