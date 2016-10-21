@@ -24,21 +24,22 @@ label {
   background-color: #e5e5e5;
   box-shadow: 10px 10px 20px grey;
 }
-#welcome .btn{
-  width: 300px;
-  height: 100px;
-  font-size: 2em;
-  background-color: grey;
-  border: 1px solid grey;
-
-}
 #welcome .btn:hover{
   width: 300px;
   height: 100px;
   font-size: 2em;
-  background-color: #383838;
-  border: none;
+  color: white;
+  background-color: #53ad56;
+  border: 1px solid #53ad56;
 
+}
+#welcome .btn{
+  width: 300px;
+  height: 100px;
+  font-size: 2em;
+  color: #2dada6;
+  background-color: transparent;
+  border: 1px solid #51ccc3;
 }
 
 
@@ -76,7 +77,15 @@ label {
   text-align: center;
   background: -webkit-linear-gradient(bottom right, #51ccc3, #2dada6);
   color: white;
-  border-radius: 0px;
+}
+
+#welcome h1 {
+  text-transform: uppercase;
+}
+.jumbotron h4 {
+  text-transform: uppercase;
+  padding-top: 10px;
+  font-family: 'Muli', sans-serif;
 }
 .panel-body {
   border: 1px solid lightgrey;

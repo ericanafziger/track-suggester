@@ -47,13 +47,13 @@ $(document).ready(function(){
 
 } else if (nameInput){
   $("#name").parent().addClass("has-success");
-  $("#email").parent().addClass("has-error");
+  $("#email").parent().effect("shake", { times:2 }).addClass("has-error");
 } else if (emailInput){
   $("#email").parent().addClass("has-success");
-  $("#name").parent().addClass("has-error");
+  $("#name").parent().effect("shake", { times:2 }).addClass("has-error");
 } else {
-  $("#name").parent().addClass("has-error");
-  $("#email").parent().addClass("has-error");
+  $("#name").parent().effect("shake", { times:2 }).addClass("has-error");
+  $("#email").parent().effect("shake", { times:2 }).addClass("has-error");
   return false;
 }
 
