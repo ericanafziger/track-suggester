@@ -1,4 +1,9 @@
 $(document).ready(function(){
+
+  $("#welcome").click(function(){
+    $("#formInputSection").show();
+    $("#welcome").hide();
+  })
   $("#blanks form").submit(function(event){
     var companyInput = $("#company").val();
     var interestsInput = $("#interests").val();
@@ -12,44 +17,30 @@ $(document).ready(function(){
 
     $(".name").text(nameInput);
     $(".email").text(emailInput);
-    $("#ruby button").click(function(){
-      location.reload();
-    });
-    $("#csharp button").click(function(){
-      location.reload();
-    });
-    $("#php button").click(function(){
-      location.reload();
-    });
-    $("#java button").click(function(){
-      location.reload();
-    });
-    $("#design button").click(function(){
-      location.reload();
-    });
-    $("#trouble button").click(function(){
+
+    $("#responses button").click(function(){
       location.reload();
     });
 
   if (nameInput && emailInput) {
 
     if (companyInput === "start-up" && interestsInput === "apps" && styleInput + environmentInput === 9) {
-    $("#ruby").show();
+    $("#ruby").slideDown();
     $("#formInputSection").hide();
   } else if (companyInput === "corp" && interestsInput === "business" && styleInput + environmentInput === 12) {
-    $("#csharp").show();
+    $("#csharp").slideDown();
     $("#formInputSection").hide();
   } else if (companyInput === "corp" && interestsInput === "android" && styleInput + environmentInput === 12) {
-    $("#java").show();
+    $("#java").slideDown();
     $("#formInputSection").hide();
   } else if (companyInput === "agency" && interestsInput === "websites" && styleInput + environmentInput === 9 || companyInput === "start-up" && interestsInput === "websites" && styleInput + environmentInput === 9) {
-    $("#php").show();
+    $("#php").slideDown();
     $("#formInputSection").hide();
   } else if (interestsInput === "websites" && styleInput === 3 || interestsInput === "operate" && styleInput === 3) {
-    $("#design").show();
+    $("#design").slideDown();
     $("#formInputSection").hide();
   } else {
-    $("#trouble").show();
+    $("#trouble").slideDown();
     $("#formInputSection").hide();
   }
 

@@ -14,6 +14,10 @@ label {
   margin-bottom: 20px;
 }
 
+#formInputSection{
+  display: none;
+}
+
 
 #ruby, #csharp, #java, #php, #design, #trouble {
   display: none;
