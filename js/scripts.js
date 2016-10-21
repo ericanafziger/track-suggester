@@ -11,17 +11,30 @@ $(document).ready(function(){
     $(".name").text(nameInput);
     $(".email").text(emailInput);
 
+  if (nameInput) {
+
     if (companyInput + interestsInput + styleInput === 18) {
     $("#ruby").show();
+    $("#formInputSection").hide();
   } else if (companyInput + interestsInput + styleInput === 13) {
     $("#csharp").show();
+    $("#formInputSection").hide();
   } else if (companyInput + interestsInput + styleInput === 14) {
     $("#java").show();
+    $("#formInputSection").hide();
   } else if (companyInput + interestsInput + styleInput === 16) {
     $("#php").show();
+    $("#formInputSection").hide();
   } else if (companyInput + interestsInput + styleInput === 30) {
     $("#design").show();
+    $("#formInputSection").hide();
   }
+
+} else {
+  alert("Please enter your name!");
+  $("#name").parent().addClass("has-error");
+  return false;
+}
 
     event.preventDefault();
 
