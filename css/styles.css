@@ -19,9 +19,9 @@ label {
 }
 
 #welcome {
-  margin-top: 20%;
+  margin-top: 10%;
   padding: 200px;
-  background-color: white;
+  background-color: #e5e5e5;
   box-shadow: 10px 10px 20px grey;
 }
 #welcome .btn{
@@ -36,7 +36,7 @@ label {
   width: 300px;
   height: 100px;
   font-size: 2em;
-  background: -webkit-linear-gradient(grey, darkgrey, grey);
+  background-color: #383838;
   border: none;
 
 }
@@ -74,10 +74,11 @@ label {
   color: white;
   border-radius: 0px;
 }
-.panel {
-  border: 1px solid #373d3c;
+.panel-body {
+  border: 1px solid lightgrey;
   min-height: 500px;
   border-radius: 0px;
+  background-color: #e5e5e5;
 }
 .panel .panel-header{
   font-size: 1.5em;
