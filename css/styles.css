@@ -3,6 +3,17 @@ img {
   display: block;
   width: 20%;
 }
+p {
+  font-family: 'Lato', sans-serif;
+}
+label {
+  font-family: 'Lato', sans-serif;
+  font-weight: bolder;
+}
+.form-control {
+  margin-bottom: 20px;
+}
+
 
 #ruby, #csharp, #java, #php, #design, #trouble {
   display: none;
@@ -33,7 +44,7 @@ img {
 }
 .panel {
   border: 1px solid #373d3c;
-  min-height: 800px;
+  min-height: 500px;
   border-radius: 0px;
 }
 .panel .panel-header{
