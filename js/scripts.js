@@ -30,20 +30,23 @@ $(document).ready(function(){
 
   if (nameInput) {
 
-    if (companyInput + interestsInput + styleInput + environmentInput === 28) {
+    if (companyInput + interestsInput + styleInput + environmentInput === 30) {
     $("#ruby").show();
     $("#formInputSection").hide();
-  } else if (companyInput + interestsInput + styleInput + environmentInput === 37) {
+  } else if (companyInput + interestsInput + styleInput + environmentInput === 14 ||  interestsInput + styleInput + environmentInput === 12) {
     $("#csharp").show();
     $("#formInputSection").hide();
-  } else if (companyInput + interestsInput + styleInput + environmentInput === 38 || companyInput + interestsInput + styleInput + environmentInput === 40) {
+  } else if (companyInput + interestsInput + styleInput + environmentInput === 15 || companyInput + interestsInput + styleInput + environmentInput === 17) {
     $("#java").show();
     $("#formInputSection").hide();
-  } else if (companyInput + interestsInput + styleInput + environmentInput === 26 || companyInput + interestsInput + styleInput + environmentInput === 27) {
+  } else if (companyInput + interestsInput + styleInput + environmentInput === 26 || companyInput + interestsInput + styleInput + environmentInput === 28) {
     $("#php").show();
     $("#formInputSection").hide();
   } else if (companyInput + interestsInput + styleInput === 30 || companyInput + interestsInput + styleInput === 29) {
     $("#design").show();
+    $("#formInputSection").hide();
+  } else {
+    $("#trouble").show();
     $("#formInputSection").hide();
   }
 

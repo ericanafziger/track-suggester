@@ -1,3 +1,6 @@
-#ruby, #csharp, #java, #php, #design {
+#ruby, #csharp, #java, #php, #design, #trouble {
   display: none;
+}
+.btn {
+  text-align: center;
 }
