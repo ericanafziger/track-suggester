@@ -1,7 +1,7 @@
 $(document).ready(function(){
   $("#blanks form").submit(function(event){
-    var companyInput = parseInt($("#company").val());
-    var interestsInput = parseInt($("#interests").val());
+    var companyInput = $("#company").val();
+    var interestsInput = $("#interests").val();
     var nameInput = $("input#name").val();
     var emailInput = $("input#email").val();
     var addressInput = $("input#address").val();
@@ -27,22 +27,25 @@ $(document).ready(function(){
     $("#design button").click(function(){
       location.reload();
     });
+    $("#trouble button").click(function(){
+      location.reload();
+    });
 
-  if (nameInput) {
+  if (nameInput && emailInput) {
 
-    if (companyInput + interestsInput + styleInput + environmentInput === 30) {
+    if (companyInput === "start-up" && interestsInput === "apps" && styleInput + environmentInput === 9) {
     $("#ruby").show();
     $("#formInputSection").hide();
-  } else if (companyInput + interestsInput + styleInput + environmentInput === 14 ||  interestsInput + styleInput + environmentInput === 12) {
+  } else if (companyInput === "corp" && interestsInput === "business" && styleInput + environmentInput === 12) {
     $("#csharp").show();
     $("#formInputSection").hide();
-  } else if (companyInput + interestsInput + styleInput + environmentInput === 15 || companyInput + interestsInput + styleInput + environmentInput === 17) {
+  } else if (companyInput === "corp" && interestsInput === "android" && styleInput + environmentInput === 12) {
     $("#java").show();
     $("#formInputSection").hide();
-  } else if (companyInput + interestsInput + styleInput + environmentInput === 26 || companyInput + interestsInput + styleInput + environmentInput === 28) {
+  } else if (companyInput === "agency" && interestsInput === "websites" && styleInput + environmentInput === 9) {
     $("#php").show();
     $("#formInputSection").hide();
-  } else if (companyInput + interestsInput + styleInput === 30 || companyInput + interestsInput + styleInput === 29) {
+  } else if (companyInput === "design" && interestsInput === "operate" && styleInput === 3) {
     $("#design").show();
     $("#formInputSection").hide();
   } else {
@@ -50,35 +53,16 @@ $(document).ready(function(){
     $("#formInputSection").hide();
   }
 
+} else if (nameInput){
+  $("#name").parent().addClass("has-error");
+} else if (emailInput){
+  $("#email").parent().addClass("has-error");
 } else {
-  $("#name").parent().addClass("has-error").append("Name required to continue!");
+  $("#name").parent().addClass("has-error");
+  $("#email").parent().addClass("has-error");
   return false;
 }
 
-
-if (emailInput) {
-
-  if (companyInput + interestsInput + styleInput === 18) {
-  $("#ruby").show();
-  $("#formInputSection").hide();
-} else if (companyInput + interestsInput + styleInput === 13) {
-  $("#csharp").show();
-  $("#formInputSection").hide();
-} else if (companyInput + interestsInput + styleInput === 14) {
-  $("#java").show();
-  $("#formInputSection").hide();
-} else if (companyInput + interestsInput + styleInput === 16 || companyInput + interestsInput + styleInput === 17) {
-  $("#php").show();
-  $("#formInputSection").hide();
-} else if (companyInput + interestsInput + styleInput === 30 || companyInput + interestsInput + styleInput === 29 || companyInput + interestsInput + styleInput === 28 || companyInput + interestsInput + styleInput === 20) {
-  $("#design").show();
-  $("#formInputSection").hide();
-}
-
-} else {
-$("#email").parent().addClass("has-error").append("Email required to continue!");
-return false;
-}
 
     event.preventDefault();
 
