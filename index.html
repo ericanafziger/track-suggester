@@ -5,6 +5,7 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.1.1.js"></script>
     <script src="js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Muli" rel="stylesheet">
     <title>Epicodus Track Suggester</title>
   </head>
   <body>
@@ -15,78 +16,78 @@
           <div class="panel-header">
             <p>Epicodus offers a variety of different tracks for students to choose from. Make the most of your Epicodus experience by picking your track from the track suggester below.</p>
           </div><!--end of panel header-->
-          <div id="blanks" class="panel-body">
-            <form>
-              <div class="row">
-                <div class="col-md-6">
-                  <label>What kind of company do you see yourself working for?</label>
-                  <select class="form-control" id="company">
-                    <option value="corp">Well-established corporation</option>
-                    <option value="start-up">Small start-up</option>
-                    <option value="agency">An agency that builds websites for clients</option>
-                    <option value="design">A company where design is a major focus</option>
-                  </select>
-
-                  <label>What interests you most about programming?</label>
-                  <select class="form-control" id="interests">
-                    <option value="websites">Building client websites</option>
-                    <option value="business">Building business software</option>
-                    <option value="android">Working as an Android developer</option>
-                    <option value="apps">Building interactive web applications</option>
-                    <option value="operate">Making things look and operate well for the user</option>
-                  </select>
-                  <br>
-                  <label>Does back-end development (building the technology that makes webpages run behind the scenes) or front-end development (building the part of the web the user sees and interacts with) interest you more?
-                  <div class="radio">
-                    <label>
-                      <input type="radio" name="style" value="5" checked>
-                      Back-end
-                    </label>
-                  </div>
-                  <div class="radio">
-                    <label>
-                      <input type="radio" name="style" value="3">
-                      Front-end
-                    </label>
-                  </div>
-                  <label>Are you looking for a laid back work environment, or a more traditional work place?
-                  <div class="radio">
-                    <label>
-                      <input type="radio" name="environment" value="4" checked>
-                      Laid Back
-                    </label>
-                  </div>
-                  <div class="radio">
-                    <label>
-                      <input type="radio" name="environment" value="7">
-                      More Traditional
-                    </label>
-                  </div>
-                </div><!--end of col 1-->
-
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input id="name" class="form-control" type="text">
-                  </div>
-                  <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input id="email" class="form-control" type="text">
-                  </div>
-                  <label for="address">Address:</label>
-                  <textarea id="address" class="form-control" rows="3">
-                  </textarea>
-                  <br>
-                  <label for="comments">Additional Comments:</label>
-                  <textarea id="comments" class="form-control" rows="3">
-                  </textarea>
-                  <br>
-                  <button type="submit" class="btn btn-success">Submit!</button>
-                </div><!--end of col 2-->
-              </div><!--end of row 1-->
-            </form>
-          </div><!--end of panel body-->
         </div><!--end of panel heading-->
+        <div id="blanks" class="panel-body">
+          <form>
+            <div class="row">
+              <div class="col-md-6">
+                <label>What kind of company do you see yourself working for?</label>
+                <select class="form-control" id="company">
+                  <option value="corp">Well-established corporation</option>
+                  <option value="start-up">Small start-up</option>
+                  <option value="agency">An agency that builds websites for clients</option>
+                  <option value="design">A company where design is a major focus</option>
+                </select>
+
+                <label>What interests you most about programming?</label>
+                <select class="form-control" id="interests">
+                  <option value="websites">Building client websites</option>
+                  <option value="business">Building business software</option>
+                  <option value="android">Working as an Android developer</option>
+                  <option value="apps">Building interactive web applications</option>
+                  <option value="operate">Making things look and operate well for the user</option>
+                </select>
+                <br>
+                <label>Does back-end development (building the technology that makes webpages run behind the scenes) or front-end development (building the part of the web the user sees and interacts with) interest you more?
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="style" value="5" checked>
+                    Back-end
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="style" value="3">
+                    Front-end
+                  </label>
+                </div>
+                <label>Are you looking for a laid back work environment, or a more traditional work place?
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="environment" value="4" checked>
+                    Laid Back
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="environment" value="7">
+                    More Traditional
+                  </label>
+                </div>
+              </div><!--end of col 1-->
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input id="name" class="form-control" type="text">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input id="email" class="form-control" type="text">
+                </div>
+                <label for="address">Address:</label>
+                <textarea id="address" class="form-control" rows="3">
+                </textarea>
+                <br>
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" class="form-control" rows="3">
+                </textarea>
+                <br>
+                <button type="submit" class="btn btn-success">Submit!</button>
+              </div><!--end of col 2-->
+            </div><!--end of row 1-->
+          </form>
+        </div><!--end of panel body-->  
       </div><!--end of panel-->
 
       <div id ="responses">
