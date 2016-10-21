@@ -1,21 +1,32 @@
-#ruby, #csharp, #java, #php, #design, #trouble {
-  display: none;
-}
-.btn {
-  display: block;
-  margin: 0 auto;
-}
-
 img {
   margin: 0 auto;
   display: block;
   width: 20%;
 }
 
+#ruby, #csharp, #java, #php, #design, #trouble {
+  display: none;
+}
 #responses {
   text-align: center;
 }
+#php img{
+  margin-bottom: 50px;
+  margin-top: 70px;
+}
+#trouble img{
+  margin-bottom: 50px;
+  margin-top: 50px;
+  width: 10%;
+}
+#design img{
+  width: 28%;
+}
 
+.btn {
+  display: block;
+  margin: 0 auto;
+}
 
 .well {
   min-height: 500px;
