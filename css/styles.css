@@ -12,9 +12,6 @@ label {
   font-family: 'Lato', sans-serif;
   font-weight: bolder;
 }
-.form-control {
-  margin-bottom: 15px;
-}
 
 #formInputSection{
   display: none;
@@ -44,6 +41,16 @@ label {
   border: 1px solid #51ccc3;
 }
 
+#welcome h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+}
+#welcome h2 {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: .5em;
+  padding-bottom: 10px;
+}
 
 #ruby, #csharp, #java, #php, #design, #trouble {
   display: none;
@@ -94,16 +101,10 @@ label {
   color: white;
 }
 
-#welcome h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.5em;
+.form-control {
+  margin-bottom: 15px;
 }
-#welcome h2 {
-  font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
-  font-size: .5em;
-  padding-bottom: 10px;
-}
+
 .jumbotron h4 {
   text-transform: uppercase;
   padding-top: 10px;
@@ -131,6 +132,7 @@ label {
   min-height: 700px;
   margin-top: 20%;
 }
+/*classes for error and success messages*/
 .has-error {
   color: #a94442;
 }
