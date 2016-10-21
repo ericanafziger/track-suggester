@@ -1,6 +1,8 @@
 img {
   margin: 0 auto;
   display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
   width: 20%;
 }
 p {
@@ -74,7 +76,15 @@ label {
 }
 #design img{
   width: 28%;
+  margin-top: 40px;
 }
+#java img{
+  margin-top: 30px;
+}
+#csharp img{
+  margin-top: 40px;
+}
+
 .container .jumbotron {
   font-family: 'Lato', sans-serif;
   font-weight: bold;
@@ -103,11 +113,13 @@ label {
 .panel-body {
   border: 1px solid lightgrey;
   min-height: 500px;
+  padding-top: 30px;
   background-color: #e5e5e5;
 }
 .panel-header{
   font-size: 1.25em;
   color: grey;
+  text-align: justify;
 }
 
 .btn {
@@ -116,7 +128,7 @@ label {
 }
 
 .well {
-  min-height: 550px;
+  min-height: 700px;
   margin-top: 20%;
 }
 .has-error {
