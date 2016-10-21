@@ -107,3 +107,9 @@ label {
   min-height: 550px;
   margin-top: 20%;
 }
+.has-error {
+  color: #a94442;
+}
+.has-success {
+  color: #3c763d;
+}

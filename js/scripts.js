@@ -46,14 +46,14 @@ $(document).ready(function(){
   }
 
 } else if (nameInput){
-  $("#name").parent().addClass("has-success");
-  $("#email").parent().effect("shake", { times:2 }).addClass("has-error");
+  $("#formname").addClass("has-success");
+  $("#formemail").effect("shake", { times:2 }).addClass("has-error");
 } else if (emailInput){
-  $("#email").parent().addClass("has-success");
-  $("#name").parent().effect("shake", { times:2 }).addClass("has-error");
+  $("#formemail").addClass("has-success");
+  $("#formname").effect("shake", { times:2 }).addClass("has-error");
 } else {
-  $("#name").parent().effect("shake", { times:2 }).addClass("has-error");
-  $("#email").parent().effect("shake", { times:2 }).addClass("has-error");
+  $("#formname").effect("shake", { times:2 }).addClass("has-error");
+  $("#formemail").effect("shake", { times:2 }).addClass("has-error");
   return false;
 }
 
