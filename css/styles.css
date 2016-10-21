@@ -2,5 +2,22 @@
   display: none;
 }
 .btn {
+  display: block;
+  margin: 0 auto;
+}
+
+img {
+  margin: 0 auto;
+  display: block;
+  width: 20%;
+}
+
+#responses {
   text-align: center;
+}
+
+
+.well {
+  min-height: 500px;
+  margin-top: 20%;
 }
