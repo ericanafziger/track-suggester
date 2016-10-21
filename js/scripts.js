@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
   $("#welcome").click(function(){
-    $("#formInputSection").show();
+    $("#formInputSection").fadeIn(500);
     $("#welcome").hide();
   })
   $("#blanks form").submit(function(event){
@@ -11,6 +11,7 @@ $(document).ready(function(){
     var emailInput = $("input#email").val();
     var addressInput = $("input#address").val();
     var commentsInput = $("input#comments").val();
+    var importantInput = $("input#important").val();
     var styleInput = parseInt($("input:radio[name=style]:checked").val());
     var environmentInput = parseInt($("input:radio[name=environment]:checked").val());
 
@@ -30,7 +31,7 @@ $(document).ready(function(){
   } else if (companyInput === "corp" && interestsInput === "business" && styleInput + environmentInput === 12 || interestsInput === "business" && styleInput === 5) {
     $("#csharp").slideDown();
     $("#formInputSection").hide();
-  } else if (companyInput === "corp" && interestsInput === "android" && styleInput + environmentInput === 12 || interestsInput === "android" && styleInput === 5) {
+  } else if (companyInput === "corp" && interestsInput === "android" && styleInput + environmentInput === 12 || importantInput === "job" && styleInput === 5 || interestsInput === "android" && styleInput === 5) {
     $("#java").slideDown();
     $("#formInputSection").hide();
   } else if (companyInput === "agency" && interestsInput === "websites" && styleInput + environmentInput === 9 || companyInput === "start-up" && interestsInput === "websites" && styleInput + environmentInput === 9 || interestsInput === "websites" && styleInput === 5) {
