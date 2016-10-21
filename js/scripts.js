@@ -10,6 +10,10 @@ console.log(companyInput);
     $("#csharp").show();
   } else if (companyInput + interestsInput === 4) {
     $("#java").show();
+  } else if (companyInput + interestsInput === 6) {
+    $("#php").show();
+  } else if (companyInput + interestsInput === 10) {
+    $("#design").show();
   }
 
     event.preventDefault();
