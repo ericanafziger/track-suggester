@@ -27,16 +27,16 @@ $(document).ready(function(){
     if (companyInput === "start-up" && interestsInput === "apps" && styleInput + environmentInput === 9 || interestsInput === "apps" && styleInput + environmentInput === 9) {
     $("#ruby").slideDown();
     $("#formInputSection").hide();
-  } else if (companyInput === "corp" && interestsInput === "business" && styleInput + environmentInput === 12) {
+  } else if (companyInput === "corp" && interestsInput === "business" && styleInput + environmentInput === 12 || interestsInput === "business" && styleInput === 5) {
     $("#csharp").slideDown();
     $("#formInputSection").hide();
-  } else if (companyInput === "corp" && interestsInput === "android" && styleInput + environmentInput === 12) {
+  } else if (companyInput === "corp" && interestsInput === "android" && styleInput + environmentInput === 12 || interestsInput === "android" && styleInput === 5) {
     $("#java").slideDown();
     $("#formInputSection").hide();
   } else if (companyInput === "agency" && interestsInput === "websites" && styleInput + environmentInput === 9 || companyInput === "start-up" && interestsInput === "websites" && styleInput + environmentInput === 9 || interestsInput === "websites" && styleInput === 5) {
     $("#php").slideDown();
     $("#formInputSection").hide();
-  } else if (interestsInput === "websites" && styleInput === 3 || interestsInput === "operate" && styleInput === 3) {
+  } else if (interestsInput === "websites" && styleInput === 3 || interestsInput === "operate" && styleInput === 3 || interestsInput === "websites" && styleInput === 3) {
     $("#design").slideDown();
     $("#formInputSection").hide();
   } else {
