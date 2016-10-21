@@ -21,22 +21,22 @@ label {
 #welcome {
   margin-top: 20%;
   padding: 200px;
-  background: -webkit-linear-gradient(white, #d9e0e0, white);
+  background-color: white;
   box-shadow: 10px 10px 20px grey;
 }
 #welcome .btn{
   width: 300px;
   height: 100px;
   font-size: 2em;
-  background-color: darkgrey;
-  border: 1px solid darkgrey;
+  background-color: grey;
+  border: 1px solid grey;
 
 }
 #welcome .btn:hover{
   width: 300px;
   height: 100px;
   font-size: 2em;
-  background: -webkit-linear-gradient(darkgrey, grey, darkgrey);
+  background: -webkit-linear-gradient(grey, darkgrey, grey);
   border: none;
 
 }
@@ -48,6 +48,11 @@ label {
 #responses {
   text-align: center;
 }
+
+#responses .btn {
+  margin-top: 50px;
+}
+
 #php img{
   margin-bottom: 50px;
   margin-top: 70px;
