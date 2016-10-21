@@ -57,6 +57,11 @@ label {
   margin: 0 auto;
   width: 70%;
 }
+#responses h1 {
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 70%;
+}
 
 #php img{
   margin-bottom: 50px;
@@ -80,21 +85,28 @@ label {
 }
 
 #welcome h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+}
+#welcome h2 {
+  font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
+  font-size: .5em;
+  padding-bottom: 10px;
 }
 .jumbotron h4 {
   text-transform: uppercase;
   padding-top: 10px;
+  padding-bottom: 10px;
   font-family: 'Muli', sans-serif;
 }
 .panel-body {
   border: 1px solid lightgrey;
   min-height: 500px;
-  border-radius: 0px;
   background-color: #e5e5e5;
 }
-.panel .panel-header{
-  font-size: 1.5em;
+.panel-header{
+  font-size: 1.25em;
   color: grey;
 }
 
