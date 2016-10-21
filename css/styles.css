@@ -52,6 +52,10 @@ label {
 #responses .btn {
   margin-top: 50px;
 }
+#responses p {
+  margin: 0 auto;
+  width: 70%;
+}
 
 #php img{
   margin-bottom: 50px;
@@ -91,6 +95,6 @@ label {
 }
 
 .well {
-  min-height: 500px;
+  min-height: 550px;
   margin-top: 20%;
 }
