@@ -25,15 +25,39 @@ $(document).ready(function(){
   } else if (companyInput + interestsInput + styleInput === 16) {
     $("#php").show();
     $("#formInputSection").hide();
-  } else if (companyInput + interestsInput + styleInput === 30) {
+  } else if (companyInput + interestsInput + styleInput === 30 || companyInput + interestsInput + styleInput === 29) {
     $("#design").show();
     $("#formInputSection").hide();
   }
 
 } else {
-  alert("Please enter your name!");
-  $("#name").parent().addClass("has-error");
+  $("#name").parent().addClass("has-error").append("Name required to continue!");
   return false;
+}
+
+
+if (emailInput) {
+
+  if (companyInput + interestsInput + styleInput === 18) {
+  $("#ruby").show();
+  $("#formInputSection").hide();
+} else if (companyInput + interestsInput + styleInput === 13) {
+  $("#csharp").show();
+  $("#formInputSection").hide();
+} else if (companyInput + interestsInput + styleInput === 14) {
+  $("#java").show();
+  $("#formInputSection").hide();
+} else if (companyInput + interestsInput + styleInput === 16) {
+  $("#php").show();
+  $("#formInputSection").hide();
+} else if (companyInput + interestsInput + styleInput === 30 || companyInput + interestsInput + styleInput === 29) {
+  $("#design").show();
+  $("#formInputSection").hide();
+}
+
+} else {
+$("#email").parent().addClass("has-error").append("Name required to continue!");
+return false;
 }
 
     event.preventDefault();
